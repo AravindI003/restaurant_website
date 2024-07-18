@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Location - The Dining Knight Restaurant</title>
+    <style>
+        body {
+            background-image: url('back.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: 1;
+            text-align: center;
+            display:grid;
+            font-family: Arial, sans-serif;
+            background-color: transparent;
+            color:white;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        }
+        nav a:hover{
+            color:crimson;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .map, .image {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .info p, .branch p {
+            margin: 5px 0;
+        }
+        .branch {
+            margin: 20px 0;
+            padding: 10px;
+           
+        }
+        header nav a {
+            background-color: #fdfafa;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            
+            color:black;
+        }
+        #logo {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+        }
+        body,h2{
+        margin:0;
+        font-family:'Times New Roman', Times, serif;
+        position: relative;
+        z-index: 1;
+}
+
+
+header a{
+    text-decoration: none;
+}
+header{
+    display:flex;
+    padding:1em;
+}
+#logo{
+    flex:3;
+    font-size:4em;
+    font-family:Arial Rounded MT Bold;
+}
+nav{
+    flex:1;
+    display:flex;
+    font-size:1.5em;
+    
+}
+nav a{
+    flex:1;
+}
+.location nav a:hover{
+    color:var(--red);
+}
+        
+header 
+        {
+            background-color:#060606;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+           
+            background-repeat: no-repeat;
+        }
+#locheading{
+    background:linear-gradient(to right,rgb(35, 34, 34),rgba(48, 47, 47, 0.838));
+    font-size:2.5em;
+    color:var(--white);
+    display:flex;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">The Dining Knight Restaurant</a>
+    </header>
+    <div class="landing">
+        <header>
+            <nav>
+                <a href="index.html" class="Home">Home</a>
+            </nav>
+            <nav>
+                <a href="About.html">About</a>
+            </nav>
+            <nav>
+                <a href="Menu.html">Menu</a>
+            </nav>
+                <nav>
+                <a href="location.html">Location</a>
+            </nav>
+        </header>
+        <center>
+        <h2 id="locheading">Location</h2>
+        <div class="container">
+            <h1>Find Us</h1>
+            <div class="image">
+                <img src="full.jpg" alt="Restaurant Area" width="100%">
+            </div>
+            <div class="info">
+                <h2>Main Branch</h2>
+                <p><strong>Address:</strong> 15, 10th Main Road, Anna Nagar, Chennai-600102</p>
+                <p><strong>Hours of Operation:</strong></p>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+                <p><strong>Contact:</strong> +91 9876543210 | thediningknight.main@gmail.com</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509364!2d144.95373631531557!3d-37.81720997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727c1dbf51a8d8!2sFlinders%20Street%20Station!5e0!3m2!1sen!2sau!4v1578398742298!5m2!1sen!2sau"
+                    width="600"
+                    height="450"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="branch">
+                <h2>Branch 1</h2>
+                <p><strong>Address:</strong> 5, 3rd Cross Road, Vijaya Nagar, Velachery, Chennai-600042</p>
+                <p><strong>Hours of Operation:</strong></p>
+                <p>Monday - Friday: 10:00 AM - 9:00 PM</p>
+                <p>Saturday - Sunday: 8:00 AM - 10:00 PM</p>
+                <p><strong>Contact:</strong>+91 9123456789 | thediningknight.branch1@gmail.com</p>
+            </div>
+            <div class="branch">
+                <h2>Branch 2</h2>
+                <p><strong>Address:</strong> 145, MIT Road, Tambaram, Chennai-600045</p>
+                <p><strong>Hours of Operation:</strong></p>
+                <p>Monday - Friday: 12:00 PM - 11:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 12:00 AM</p>
+                <p><strong>Contact:</strong>+91 9345678901| thediningknight.branch2@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+</html>
